@@ -68,7 +68,16 @@ export default {
     pageLoaded() {},
     submit() {
       this.isLoading = true;
-      alert("Login me in");
+      if(this.user.email != 'test@mail.com' && this.user.password != 'pass'){
+        alert("Incorrect Login details");
+
+      this.isLoading = false;
+    
+      }else{
+        this.$router.push("/profile");
+         this.isLoading = false;
+     }
+
     }
   }
 };

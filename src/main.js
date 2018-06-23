@@ -15,7 +15,7 @@ Vue.registerElement(
   "CardView",
   () => require("nativescript-cardview").CardView
 );
-
+Vue.registerElement("MapView", () => require("nativescript-google-maps-sdk").MapView);
 
 
 TNSFontIcon.debug = true;

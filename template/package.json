@@ -12,7 +12,8 @@
     "tns-core-modules": "~3.4.1",
     "nativescript-fonticon": "^1.1.1",
     "nativescript-cardview": "^3.1.0",
-    "nativescript-ripple": "^2.0.0"
+    "nativescript-ripple": "^2.0.0",
+    "nativescript-google-maps-sdk": "^2.6.0"
   },
   "devDependencies": {
     "babel-traverse": "6.26.0",
