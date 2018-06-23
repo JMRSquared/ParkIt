@@ -10,11 +10,12 @@ import {
   fonticon
 } from "nativescript-fonticon"; // require the couchbase module
 
-
+Vue.registerElement("Ripple", () => require("nativescript-ripple").Ripple);
 Vue.registerElement(
   "CardView",
   () => require("nativescript-cardview").CardView
 );
+
 
 
 TNSFontIcon.debug = true;

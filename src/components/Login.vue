@@ -1,13 +1,7 @@
 <template>
-  <page @loaded="pageLoaded()">
-    <ActionBar>
-      <GridLayout rows="auto" columns="auto,*,auto,auto" orientation="horizontal">
-        <Ripple class="p-10" @tap="$router.push('/home')" verticalAlignment="center" col="0" borderRadius="50%">
-          <Label verticalAlignment="center" class="mdi" fontSize="25%" :text="'mdi-home' | fonticon"></Label>
-        </Ripple>
-        <Label col="1" class="m-l-25 font-weight-bold" verticalAlignment="center" text="Login"></Label>
-      </GridLayout>
-    </ActionBar>
+  <page class="page">
+
+    <ActionBar class="action-bar" title="Login"/>
     <ScrollView width="100%">
       <CardView verticalAlignment="center" padding="10" margin="4" elevation="10" shadowOffsetHeight="10" shadowOpacity="0.2" shadowRadius="50">
         <GridLayout width="100%">
