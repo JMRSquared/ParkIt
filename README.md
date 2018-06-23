@@ -1,6 +1,6 @@
-# ParkIt
+# parkit
 
-> A parking station system that automates payment
+> A parking system that helps solve payments for parking
 
 ## Usage
 

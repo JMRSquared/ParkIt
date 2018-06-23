@@ -2,18 +2,20 @@ import Vue from 'nativescript-vue';
 
 import router from './router';
 
+import store from './store';
+
+import './styles.scss';
 import {
   TNSFontIcon,
   fonticon
 } from "nativescript-fonticon"; // require the couchbase module
 
-import {
-  Feedback,
-  FeedbackType,
-  FeedbackPosition
-} from "nativescript-feedback";
 
-import './styles.scss';
+Vue.registerElement(
+  "CardView",
+  () => require("nativescript-cardview").CardView
+);
+
 
 TNSFontIcon.debug = true;
 TNSFontIcon.paths = {
@@ -21,8 +23,6 @@ TNSFontIcon.paths = {
   mdi: "MaterialIcons.css"
 };
 TNSFontIcon.loadCss();
-
-Vue.prototype.$feedback = new Feedback();
 Vue.filter("fonticon", fonticon);
 
 // Uncommment the following to see NativeScript-Vue output logs
@@ -32,5 +32,6 @@ new Vue({
 
   router,
 
+  store,
 
 }).$start();

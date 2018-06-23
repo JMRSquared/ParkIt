@@ -1,7 +1,7 @@
 {
-  "name": "partit-online",
+  "name": "parkit",
   "version": "1.0.0",
-  "description": "A parking station system that automates payment",
+  "description": "A parking system that helps solve payments for parking",
   "author": "Sirwali Joseph <mulavhe@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -18,12 +18,12 @@
   },
   "dependencies": {
     "nativescript-cardview": "^3.1.0",
-    "nativescript-feedback": "^1.2.0",
     "nativescript-fonticon": "^1.1.1",
     "nativescript-theme-core": "^1.0.4",
     "nativescript-vue": "^1.3.1",
     "tns-core-modules": "~3.4.1",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
